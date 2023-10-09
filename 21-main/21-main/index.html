@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="blackjack.css">
+        <script src="blackjack.js"></script>
+    </head>
+
+    <body>
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards">
+            <img id="hidden" src="./cards/BACK.png">
+        </div>
+
+        <h2>You: <span id="your-sum"></span>
+        </h2>
+        <span id="message"></span>
+        <div id="your-cards"></div>
+
+        <br>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <p id="results"></p>
+        <button id="retry">Retry</button>
+    </body>
+
+    <footer>
+        <h2>Правила игры:</h2>
+        <p>Цель игры - набрать 21 очко или близкую к этому сумму.</p>
+        <p>Если игрок набирает сумму очков, превышающую 21, то его ставка проигрывает.</p>
+        <p>Если сумма очков на картах диллера больше, чем 21, то все ставки, оставшиеся в игре, выигрывают</p>
+        <p>Туз = 1. Валет, дама, король = 10 очков</p>
+
+    </footer>
+</html>
